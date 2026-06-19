@@ -1,0 +1,47 @@
+# ── Gradle ────────────────────────────────────────────────────────────────────
+build/
+.gradle/
+# Wrapper jar is intentionally kept (gradle/wrapper/gradle-wrapper.jar)
+
+# ── Spring Boot ───────────────────────────────────────────────────────────────
+# Packed executable jar produced by bootJar
+*.jar
+# Spring Boot devtools restart trigger
+.spring-boot-devtools.properties
+# Local application overrides (keep application.properties, ignore local secrets)
+application-local.properties
+application-local.yml
+
+# ── Java ──────────────────────────────────────────────────────────────────────
+*.class
+hs_err_pid*.log
+replay_pid*.log
+
+# ── IntelliJ IDEA ─────────────────────────────────────────────────────────────
+# Commit: .idea/gradle.xml, compiler.xml, misc.xml, vcs.xml (shared project config)
+# Ignore: personal/machine-local files
+.idea/workspace.xml
+.idea/shelf/
+.idea/httpRequests/
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/queries/
+*.iml
+*.ipr
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+__MACOSX/
+
+# ── Windows ───────────────────────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Secrets / environment ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
